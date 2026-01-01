@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  src: url(fontz/LilitaOne-Regular.ttf);
+  font-family: lilitOne;
+}
+@font-face {
+  src: url(fontz/YanoneKaffeesatz-VariableFont_wght.ttf);
+  font-family: yanoneka;
+}
+@font-face {
+  src: url(fontz/RubikGlitch-Regular.ttf);
+  font-family: rubikGlitch;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: yanoneka;
+}
+
+main {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+}
+
+.input-section {
+  width: 45%;
+  height: 100vh;
+  border-right: 5px solid black;
+  position: relative;
+}
+.input-section header {
+  max-width: 13rem;
+  color: rgb(9, 9, 199);
+  font-family: rubikGlitch;
+  height: auto;
+  font-weight: 900;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 2.5rem;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
+  text-transform: lowercase;
+}
+.input-section .login-input-fieldz {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60%;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+}
+.input-section .login-input-fieldz h4 {
+  color: rgb(90, 90, 228);
+  font-weight: 400;
+  font-family: lilitOne;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  word-spacing: 1.2px;
+  letter-spacing: 0.5px;
+  justify-self: center;
+  font-size: 2.5rem;
+}
+.input-section .login-input-fieldz .inputz {
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.input-section .login-input-fieldz input {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 1.5rem;
+  font-style: italic;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 0.5px groove rgb(148, 147, 147);
+}
+.input-section .login-input-fieldz a {
+  text-decoration: none;
+  margin-left: auto;
+  padding-right: 3.5rem;
+  font-size: 1.2rem;
+  color: rgb(143, 143, 236);
+}
+.input-section .login-input-fieldz button {
+  width: 45%;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  background-color: rgb(9, 9, 199);
+  border-radius: 15px;
+  border: none;
+}
+.input-section .login-input-fieldz button:hover {
+  background-color: rgb(90, 90, 228);
+  font-weight: 750;
+  cursor: pointer;
+  transition: 0.8s ease-in-out;
+}
+
+.desc-section {
+  width: 55%;
+  color: white;
+  position: relative;
+  background-image: url(images/background-design.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.desc-section header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 3rem;
+  gap: 2.5rem;
+  height: 5rem;
+  width: auto;
+  margin-left: auto;
+  align-items: center;
+}
+.desc-section header p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  word-spacing: 0.3px;
+}
+.desc-section header .sign-up-btn {
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  color: rgb(236, 227, 227);
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1.5px groove white;
+  border-radius: 1.5rem;
+}
+.desc-section header .sign-up-btn:hover {
+  cursor: pointer;
+  transition: 0.8s ease-in-out;
+}
+.desc-section article {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  height: auto;
+  margin-left: 3rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+.desc-section article h3 {
+  width: 80%;
+  font-size: 3.2rem;
+  font-weight: 700;
+  font-family: lilitOne;
+  word-spacing: 2px;
+  color: rgb(212, 206, 206);
+  letter-spacing: 0.5px;
+}
+.desc-section article h3 span {
+  font-weight: 900;
+  font-family: rubikGlitch;
+  font-size: 3.7rem;
+  letter-spacing: 1px;
+  color: white;
+}
+.desc-section article p {
+  width: 50%;
+  font-size: 1.2rem;
+  word-spacing: 1.5px;
+  font-weight: 300;
+}/*# sourceMappingURL=login.css.map */

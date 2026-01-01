@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 60 60" xml:space="preserve">
+<g>
+	<g>
+		<rect x="1" y="24" style="fill:#26B99A;" width="22" height="14"/>
+		<path style="fill:#26B99A;" d="M23,39H1c-0.552,0-1-0.447-1-1V24c0-0.553,0.448-1,1-1h22c0.552,0,1,0.447,1,1v14
+			C24,38.553,23.552,39,23,39z M2,37h20V25H2V37z"/>
+	</g>
+	<g>
+		<rect x="37" y="24" style="fill:#26B99A;" width="22" height="14"/>
+		<path style="fill:#26B99A;" d="M59,39H37c-0.552,0-1-0.447-1-1V24c0-0.553,0.448-1,1-1h22c0.553,0,1,0.447,1,1v14
+			C60,38.553,59.553,39,59,39z M38,37h20V25H38V37z"/>
+	</g>
+	<polygon style="fill:#7383BF;" points="37,45 37,17 46,17 30,1 14,17 23,17 23,45 1,45 1,59 23,59 37,59 59,59 59,45 	"/>
+</g>
+</svg>

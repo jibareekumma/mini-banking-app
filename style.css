@@ -1,0 +1,461 @@
+@font-face {
+  src: url(fontz/LilitaOne-Regular.ttf);
+  font-family: lilitOne;
+}
+@font-face {
+  src: url(fontz/YanoneKaffeesatz-VariableFont_wght.ttf);
+  font-family: yanoneka;
+}
+@font-face {
+  src: url(fontz/RubikGlitch-Regular.ttf);
+  font-family: rubikGlitch;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  font-family: yanoneka;
+}
+
+.login-btn {
+  margin-top: 1rem;
+  width: 10rem;
+  border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 0.2px;
+  background-color: rgb(9, 9, 199);
+  color: white;
+  font-weight: 400;
+  border-radius: 1.5rem;
+  height: 2.7rem;
+  border: none;
+}
+.login-btn:hover {
+  cursor: pointer;
+  transition: 0.8s ease-in-out;
+  background-color: rgb(90, 90, 228);
+}
+
+#header-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#header-container .message-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+#header-container .message-container h3 {
+  font-size: 1.5rem;
+  letter-spacing: 0.3px;
+}
+#header-container .message-container p {
+  font-size: 0.9rem;
+  color: rgb(70, 68, 68);
+  letter-spacing: 0.7px;
+}
+#header-container #notification-container {
+  width: 12rem;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+#header-container #notification-container .gifting {
+  width: 65%;
+  background-color: rgb(221, 245, 221);
+  border: 1px groove rgb(101, 241, 101);
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.1px;
+  gap: 0.3rem;
+}
+#header-container #notification-container .gifting:hover {
+  cursor: pointer;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.dashboard-section {
+  width: 100%;
+  background-color: rgb(9, 9, 199);
+  height: 14rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+.dashboard-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  border-top-left-radius: 10px;
+  border-top-right-radius: -10px;
+  width: 8.5rem;
+  height: 3.5rem;
+}
+.dashboard-section::after:hover {
+  cursor: pointer;
+}
+.dashboard-section .balance {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.dashboard-section .balance h3 {
+  letter-spacing: 1px;
+  font-size: 1.7rem;
+}
+.dashboard-section .balance p {
+  font-size: 0.9rem;
+  color: rgb(188, 189, 194);
+  letter-spacing: 0.7px;
+}
+.dashboard-section .card-detailz {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+.dashboard-section .card-detailz .card-numb {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.dashboard-section .card-detailz h4 {
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  color: rgb(188, 189, 194);
+}
+.dashboard-section .card-detailz p {
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.deposit-btn {
+  width: 9rem;
+  height: 3.2rem;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+}
+.deposit-btn:hover {
+  cursor: pointer;
+  background-color: rgb(90, 90, 228);
+  transition: 0.8s ease-in-out;
+}
+
+.button-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.button-section .transaction-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: center;
+}
+.button-section .transaction-btn:hover {
+  cursor: pointer;
+}
+.button-section .transaction-btn div {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(220, 220, 241);
+  border-radius: 10px;
+}
+.button-section .transaction-btn p {
+  font-size: 1.2rem;
+  letter-spacing: 0.3px;
+  font-weight: 550;
+  color: rgb(64, 64, 65);
+}
+
+.transaction-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.transaction-headingz {
+  display: flex;
+  justify-content: space-between;
+}
+.transaction-headingz p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+.transaction-headingz a {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: rgb(143, 143, 236);
+}
+
+.transactionz {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#transaction {
+  display: flex;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: auto;
+  justify-content: space-between;
+  background-color: rgb(220, 220, 241);
+}
+#transaction .image {
+  background-color: white;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+#transaction .sect {
+  display: flex;
+  gap: 1rem;
+}
+#transaction .details1, #transaction .details2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#transaction .details1 h4, #transaction .details2 h4 {
+  font-size: 1.4rem;
+  letter-spacing: 0.3px;
+  font-weight: 600;
+}
+#transaction .details1 p, #transaction .details2 p {
+  font-weight: 550;
+  font-size: 1.1rem;
+  color: rgb(64, 64, 65);
+}
+#transaction .details2 {
+  align-items: center;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  height: 7rem;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer .navigate-property:hover {
+  cursor: pointer;
+  transition: 0.8s ease-in-out;
+}
+.footer .fingerprint {
+  transform: translatey(-0.5rem);
+  width: 4rem;
+  height: 4rem;
+  background-color: rgb(9, 9, 199);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.action-interface {
+  width: 70vw;
+  margin-right: 15%;
+  margin-left: 15%;
+  height: 25rem;
+  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  background-color: rgb(9, 9, 199);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.action-interface h4 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.3px;
+  font-family: lilitOne;
+}
+.action-interface .cancel-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+.action-interface .cancel-btn:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  transition: 0.8s ease-in-out;
+}
+.action-interface .inputz {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  font-size: 1.2rem;
+  letter-spacing: 0.3px;
+}
+.action-interface .inputz div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.action-interface .inputz div input {
+  height: 3rem;
+  border-radius: 5px;
+  background-color: rgb(143, 143, 236);
+  border: none;
+}
+.action-interface .inputz div input:hover {
+  cursor: pointer;
+}
+.action-interface .inputz button {
+  height: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.5px;
+  background-color: black;
+  color: white;
+  font-size: 1.1rem;
+  font-family: yanoneka;
+}
+.action-interface .inputz button:hover {
+  cursor: pointer;
+  background-color: rgb(90, 90, 228);
+  transition: 0.8s ease-in-out;
+}
+
+.loan-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.loan-div input {
+  height: 3rem;
+  border-radius: 5px;
+  background-color: rgb(143, 143, 236);
+  border: none;
+}
+.loan-div input:hover {
+  cursor: pointer;
+}
+
+.loan-btn {
+  height: 3rem;
+  width: 80%;
+  border: none;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.3px;
+  background-color: black;
+  color: white;
+  font-size: 1.1rem;
+}
+.loan-btn:hover {
+  cursor: pointer;
+  background-color: rgb(90, 90, 228);
+  transition: 0.8s ease-in-out;
+}
+
+.send-money {
+  position: absolute;
+  left: 50vw;
+  top: 50%;
+  transform: translate(-50vw, -50%);
+  z-index: 3;
+}
+
+.Request-money {
+  position: absolute;
+  left: 50vw;
+  top: 50%;
+  transform: translate(-50vw, -50%);
+  z-index: 3;
+}
+
+.acc-closure {
+  position: absolute;
+  left: 50vw;
+  top: 50%;
+  transform: translate(-50vw, -50%);
+  z-index: 3;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(180, 207, 247, 0.5);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  z-index: 2;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
