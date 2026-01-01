@@ -58,3 +58,33 @@ cancelClose.addEventListener('click', function(){
     closeAcc.classList.add('hidden')
     overlay.classList.add('hidden')
 })
+
+// accounts and names using the object method 
+// (owner, movements,pin, interest rate)
+
+const account1 = {
+    name: 'Arman Vandayan',
+    movements: [6500, -1200, 2400, -700, -1800, 8000, -950],
+    pin: 4829
+};
+
+const account2 = {
+    name: 'Lief Scotgrom',
+    movements: [4200, -300, -900, 5200, -1500, 700, -600],
+    pin: 7713
+};
+
+const account3 = {
+    name: 'Nari Matsukawa',
+    movements: [3000, 7800, -2500, -400, 1600, -900, -1200],
+    pin: 1594
+};
+
+const account4 = {
+    name: 'Ilyas Qadriyelv', 
+    movements: [8000, -3200, 2100, -700, -500, 4300, -1800],
+    pin: 9867
+}
+
+const accounts = [account1, account2, account3, account4];
+console.log(accounts)
