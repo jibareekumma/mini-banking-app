@@ -15,6 +15,12 @@ const closeLoan = document.querySelector('.close-loan');
 const cancelClose = document.querySelector('.cancel-close')
 const closeSend = document.querySelector('.cancel-send-money')
 
+//accounts elements 
+const userNameDisplay = document.querySelector('.username-display');
+const balanceDisplay = document.querySelector('.main-balance');
+const containerTransaction = document.getElementById('transaction');
+
+
 // Buttons for the actions interface closing
 
 
@@ -88,3 +94,24 @@ const account4 = {
 
 const accounts = [account1, account2, account3, account4];
 console.log(accounts)
+
+
+
+// userNameDisplay.textContent = 'Solomon'
+
+
+// showing cuurency using map
+const currencies = new Map([
+    ['USD', 'United State Dollars'],
+    ['EUR', 'Euro'],
+    ['GBP', 'Pound Sterling']
+]);
+
+const mainMovements = [5200, -1400, 8000, -600, -2300, 1900, -750];
+
+const displayMvt = function(mvt, sort = false){
+    containerTransaction.innerHTML = '';
+};
+const mvs = sort ? 
+mvt.slice().sort((a, b) => a - b) :
+mvt;
